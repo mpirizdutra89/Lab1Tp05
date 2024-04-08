@@ -1,5 +1,6 @@
 <h3>Para poder visualizar el proyecto en net Beans: (intrucciones para los que quieran clonar)</h3>
        <ul>
+        <li>Clonar el repo</li>
         <li>Crear un proyecto con el mismo nombre del repositorio (tener en cuenta de no estar en la misma ubicación para evita conflictos de nombre)</li>
         <li>En la seccion de la creación de proyecto el main deve ser -> controlador.Main (respeten la estructura del repo)</li>
         <li>Una vez creado cerrar el proyecto.</li>
