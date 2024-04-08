@@ -1,7 +1,7 @@
 <h3>Para poder visualizar el proyecto en net Beans:</h3>
        <ul>
         <li>Crear un proyecto con el mismo nombre del repositorio (tener en cuenta de no estar en la misma ubicación para evita conflictos de nombre)</li>
-        <li>En la seccion de la creación de proyecto el main deve ser -> controlador.Main</li>
+        <li>En la seccion de la creación de proyecto el main deve ser -> controlador.Main (respeten la estructura del repo)</li>
         <li>Una vez creado cerrar el proyecto.</li>
         <li>Ir a src/controaldor y borrar el main (para que no remplaze el main del repositorio)</li>
         <li>Volver a la raíz del proyecto. Y copiar todo el contenido.</li>
