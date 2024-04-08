@@ -10,6 +10,6 @@
         <li>Ir al netBeans y buscar el repositorio de nombre Lab1Tp05, que como podrán ver ya lo reconoce como un proyecto.</li>
         <li>ya podrán  ejecutar y trabajar en el.</li>
     </ul>
-<h4>EL pryecto deve ser subido bien para que esto funcione  <a href="https://youtu.be/PPzyL6_aMKM?si=BxKMO_L1Tj0iPc6F" target="_blank" rel="nbproyect github .gitignore">ver video</a></h4>         
+<p>EL proyecto deve ser subido bien para que esto funcione, encaso de que quieran saber como crear el proyecto bien desde cero mirar el  <a href="https://youtu.be/PPzyL6_aMKM?si=BxKMO_L1Tj0iPc6F" target="_blank" rel="nbproyect github .gitignore"> video</a></p>         
 Autores:
 
