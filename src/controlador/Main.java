@@ -7,8 +7,9 @@ package Controlador;
 public class Main {
 
    
-    /*public static void main(String[] args) {
-        //Clonando el proyecto
-    }*/
+    public static void main(String[] args) {
+        //intancia ventana
+        
+    }
 
 }

@@ -40,12 +40,13 @@ public class ControladorVistaGestionProducto {
        //Falta el name 
     }
     
-    private static void armarCabeceraTabla(){
+    private static void armarCabeceraTabla() {
         for (EncabezadosTable encabezado : EncabezadosTable.values()) {
-             modeloTable.addColumn(encabezado.toString());
+            modeloTable.addColumn(encabezado.toString());
         }
-       
-        // nameTAbla.setModel(modeloTable);
+
+        vgp.getJTable1().setModel(modeloTable);
+
     }
     
     
