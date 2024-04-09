@@ -20,7 +20,7 @@ public class ControladorVistaGestionProducto {
    private static VistaGestionProducto vgp;
    private static ArrayList<Producto> listaProducto;
     
-    public static void cargarIntancia(VistaGestionProducto vgp2) {
+    public static void cargarInstancia(VistaGestionProducto vgp2) {
         vgp = vgp2;
         listaProducto = new ArrayList<>();
         modeloTable = new DefaultTableModel() {

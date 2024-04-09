@@ -4,6 +4,8 @@
  */
 package vista;
 
+import controlador.ControladorVistaGestionProducto;
+
 /**
  *
  * @author nn
@@ -15,6 +17,7 @@ public class VistaGestionProducto extends javax.swing.JFrame {
      */
     public VistaGestionProducto() {
         initComponents();
+        ControladorVistaGestionProducto.cargarInstancia(this);
     }
 
     /**
@@ -232,4 +235,24 @@ public class VistaGestionProducto extends javax.swing.JFrame {
     private javax.swing.JTextField jTFPrecio;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
+
+    public javax.swing.JButton getJBTNAgregar() {
+        return jBTNAgregar;
+    }
+
+    public javax.swing.JComboBox<String> getJCBCategoria() {
+        return jCBCategoria;
+    }
+
+    public javax.swing.JTextField getJTFNombre() {
+        return jTFNombre;
+    }
+
+    public javax.swing.JTextField getJTFPrecio() {
+        return jTFPrecio;
+    }
+
+    public javax.swing.JTable getJTable1() {
+        return jTable1;
+    }
 }
