@@ -53,17 +53,11 @@ public class VistaGestionProducto extends javax.swing.JFrame {
 
         jLabel3.setText("Nombre");
 
-        jTFNombre.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTFNombreActionPerformed(evt);
-            }
-        });
-
         jLabel4.setText("Precio");
 
-        jTFPrecio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTFPrecioActionPerformed(evt);
+        jTFPrecio.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTFPrecioKeyTyped(evt);
             }
         });
 
@@ -184,13 +178,9 @@ public class VistaGestionProducto extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTFNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFNombreActionPerformed
+    private void jTFPrecioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTFPrecioKeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTFNombreActionPerformed
-
-    private void jTFPrecioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFPrecioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTFPrecioActionPerformed
+    }//GEN-LAST:event_jTFPrecioKeyTyped
 
     /**
      * @param args the command line arguments

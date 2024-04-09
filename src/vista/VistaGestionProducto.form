@@ -165,9 +165,6 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="jTFNombre">
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTFNombreActionPerformed"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
@@ -176,7 +173,7 @@
             </Component>
             <Component class="javax.swing.JTextField" name="jTFPrecio">
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTFPrecioActionPerformed"/>
+                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTFPrecioKeyTyped"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jBTNAgregar">
