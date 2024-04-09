@@ -4,10 +4,47 @@
  */
 package controlador;
 
+import java.util.ArrayList;
+import javax.swing.table.DefaultTableModel;
+import modelo.Producto;
+import vista.VistaGestionProducto;
+
 /**
  *
  * @author nn
  */
 public class ControladorVistaGestionProducto {
+    
+   private static DefaultTableModel modeloTable;
+   private static VistaGestionProducto vgp;
+   private static ArrayList<Producto> listaProducto;
+    
+    public static void cargarIntancia(VistaGestionProducto vgp2) {
+        vgp = vgp2;
+        listaProducto = new ArrayList<>();
+        modeloTable = new DefaultTableModel() {
+            public boolean isCellEditable(int f, int c) {
+                return false;
+            }
+        };
+        armarCabeceraTabla();
+    }
+    
+    private static void armarComboBx(){
+       /*  cr.getjCBxRubro().addItem("Seleccione Rubro");
+        for (Categorias rubro : Categorias.values()) {
+            cr.getjCBxRubro().addItem(rubro.toString());
+
+        }*/
+       //Falta el name 
+    }
+    
+    private static void armarCabeceraTabla(){
+        modeloTable.addColumn("Nombre");
+        modeloTable.addColumn("Precio");
+        modeloTable.addColumn("categoria");
+        // nameTAbla.setModel(modeloTable);
+    }
+    
     
 }
