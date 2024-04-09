@@ -6,6 +6,7 @@ package controlador;
 
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
+import modelo.EncabezadosTable;
 import modelo.Producto;
 import vista.VistaGestionProducto;
 
@@ -40,9 +41,10 @@ public class ControladorVistaGestionProducto {
     }
     
     private static void armarCabeceraTabla(){
-        modeloTable.addColumn("Nombre");
-        modeloTable.addColumn("Precio");
-        modeloTable.addColumn("categoria");
+        for (EncabezadosTable encabezado : EncabezadosTable.values()) {
+             modeloTable.addColumn(encabezado.toString());
+        }
+       
         // nameTAbla.setModel(modeloTable);
     }
     
