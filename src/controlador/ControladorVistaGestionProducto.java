@@ -60,6 +60,10 @@ public class ControladorVistaGestionProducto {
         double precio;
         try {
             precio = Double.parseDouble(precioStr);
+             if (precio <= 0) {
+            viewDialogo("El precio debe ser mayor que cero.", 1);
+            return;
+        }  
         } catch (NumberFormatException ex) {
             viewDialogo("Por favor, ingrese un precio valido.",1);
             return;
