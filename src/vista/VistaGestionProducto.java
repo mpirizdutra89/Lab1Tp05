@@ -52,8 +52,6 @@ public class VistaGestionProducto extends javax.swing.JFrame {
 
         jLabel2.setText("Categoria");
 
-        jCBCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
         jLabel3.setText("Nombre");
 
         jLabel4.setText("Precio");
