@@ -44,24 +44,29 @@ public class VistaGestionProducto extends javax.swing.JFrame {
         setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(23, 190, 187));
 
         jLabel1.setFont(new java.awt.Font("Roboto", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Gestión de Productos");
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createCompoundBorder(null, javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0))), "Alta Producto", javax.swing.border.TitledBorder.LEFT, javax.swing.border.TitledBorder.ABOVE_TOP, new java.awt.Font("Roboto", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel2.setBackground(new java.awt.Color(205, 83, 52));
+        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(58, 110, 165), new java.awt.Color(58, 110, 165)));
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel2.setText("Categoria");
 
+        jCBCategoria.setBackground(new java.awt.Color(255, 255, 255));
         jCBCategoria.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jCBCategoria.setForeground(new java.awt.Color(0, 0, 0));
         jCBCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel3.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel3.setText("Nombre");
 
+        jTFNombre.setBackground(new java.awt.Color(255, 255, 255));
         jTFNombre.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jTFNombre.setForeground(new java.awt.Color(0, 0, 0));
         jTFNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTFNombreActionPerformed(evt);
@@ -71,6 +76,8 @@ public class VistaGestionProducto extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel4.setText("Precio");
 
+        jTFPrecio.setBackground(new java.awt.Color(255, 255, 255));
+        jTFPrecio.setForeground(new java.awt.Color(0, 0, 0));
         jTFPrecio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTFPrecioActionPerformed(evt);
@@ -82,8 +89,11 @@ public class VistaGestionProducto extends javax.swing.JFrame {
             }
         });
 
+        jBTNAgregar.setBackground(new java.awt.Color(58, 110, 165));
         jBTNAgregar.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jBTNAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/iconos/icons8-agregar-a-carrito-de-compras-48.png"))); // NOI18N
         jBTNAgregar.setText("Agregar");
+        jBTNAgregar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0), new java.awt.Color(0, 0, 0)));
         jBTNAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBTNAgregarActionPerformed(evt);
@@ -95,7 +105,7 @@ public class VistaGestionProducto extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addGap(20, 20, 20)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
@@ -106,9 +116,9 @@ public class VistaGestionProducto extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jTFNombre)
                             .addComponent(jTFPrecio))
-                        .addGap(69, 69, 69)
-                        .addComponent(jBTNAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38))
+                        .addGap(35, 35, 35)
+                        .addComponent(jBTNAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jCBCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
@@ -132,6 +142,10 @@ public class VistaGestionProducto extends javax.swing.JFrame {
                 .addGap(25, 25, 25))
         );
 
+        jPanel3.setBackground(new java.awt.Color(205, 83, 52));
+        jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(58, 110, 165), new java.awt.Color(58, 110, 165)));
+
+        jTable1.setBackground(new java.awt.Color(255, 255, 255));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -150,15 +164,15 @@ public class VistaGestionProducto extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 564, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 551, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 297, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -173,7 +187,7 @@ public class VistaGestionProducto extends javax.swing.JFrame {
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(157, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(116, 116, 116))
         );
