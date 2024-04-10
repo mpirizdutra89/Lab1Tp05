@@ -183,6 +183,7 @@ public class VistaGestionProducto extends javax.swing.JFrame {
 
     private void jTFPrecioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTFPrecioKeyTyped
         // TODO add your handling code here:
+        controlador.ControladorVistaGestionProducto.soloNumerosGetJTFPrecio(evt);
     }//GEN-LAST:event_jTFPrecioKeyTyped
 
     /**

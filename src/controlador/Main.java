@@ -4,6 +4,7 @@
  */
 package controlador;
 
+import javax.swing.JOptionPane;
 import vista.VistaGestionProducto;
 
 /**
@@ -11,14 +12,23 @@ import vista.VistaGestionProducto;
  * @author Martin
  */
 public class Main {
-
+    private static  VistaGestionProducto vgp;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        VistaGestionProducto vgp= new VistaGestionProducto();
+        vgp = new VistaGestionProducto();
         vgp.setLocationRelativeTo(null);
         vgp.setVisible(true);
     }
     
+    //Para levantar show dialogo  . El tipo es 0 o 1 , donde 0 es de info y 1 de warning
+    public static void viewDialogo(String msj, String titulo, int tipo) {
+        JOptionPane.showMessageDialog(vgp, msj, titulo, tipo);
+    }
+
+    public static void viewDialogo(String msj, int tipo) {
+        JOptionPane.showMessageDialog(vgp, msj, "", tipo);
+    }
+
 }

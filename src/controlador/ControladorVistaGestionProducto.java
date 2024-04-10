@@ -4,6 +4,7 @@
  */
 package controlador;
 
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 import modelo.Categorias;
@@ -50,6 +51,27 @@ public class ControladorVistaGestionProducto {
 
         vgp.getJTable1().setModel(modeloTable);
 
+    }
+    //Metodo que solo permite la entrada de nuemro y un punto y dos decimales
+    public static void soloNumerosGetJTFPrecio(java.awt.event.KeyEvent evt) {
+        char c = evt.getKeyChar();
+
+        if (!Character.isDigit(c) && c != KeyEvent.VK_BACK_SPACE && c != KeyEvent.VK_DELETE && c != '.') {
+            evt.consume();
+        } else if (c == '.' && vgp.getJTFPrecio().getText().isEmpty()) {
+            evt.consume();
+        } else if (c == '.' && vgp.getJTFPrecio().getText().contains(".")) {
+
+            evt.consume();
+        } else if (Character.isDigit(c) && vgp.getJTFPrecio().getText().contains(".")) {
+
+            String text = vgp.getJTFPrecio().getText();
+            int dotIndex = text.indexOf('.');
+            int digitsAfterDot = text.length() - dotIndex - 1;
+            if (digitsAfterDot >= 2) {
+                evt.consume();
+            }
+        }
     }
     
     
