@@ -6,6 +6,7 @@ package controlador;
 
 import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
+import modelo.Categorias;
 import modelo.EncabezadosTable;
 import modelo.Producto;
 import vista.VistaGestionProducto;
@@ -28,16 +29,18 @@ public class ControladorVistaGestionProducto {
                 return false;
             }
         };
+        armarComboBx();
         armarCabeceraTabla();
     }
     
     private static void armarComboBx(){
-       /*  cr.getjCBxRubro().addItem("Seleccione Rubro");
+        
+        vgp.getJCBCategoria().addItem("Seleccione rubro");
         for (Categorias rubro : Categorias.values()) {
-            cr.getjCBxRubro().addItem(rubro.toString());
+            vgp.getJCBCategoria().addItem(rubro.toString());
 
-        }*/
-       //Falta el name 
+        }
+      
     }
     
     private static void armarCabeceraTabla() {
