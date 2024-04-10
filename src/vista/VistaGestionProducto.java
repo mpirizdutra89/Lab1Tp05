@@ -62,7 +62,6 @@ public class VistaGestionProducto extends javax.swing.JFrame {
         jCBCategoria.setBackground(new java.awt.Color(255, 255, 255));
         jCBCategoria.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jCBCategoria.setForeground(new java.awt.Color(0, 0, 0));
-        jCBCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         jLabel3.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         jLabel3.setText("Nombre");
@@ -84,11 +83,6 @@ public class VistaGestionProducto extends javax.swing.JFrame {
         jTFPrecio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTFPrecioActionPerformed(evt);
-            }
-        });
-        jTFPrecio.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                jTFPrecioKeyTyped(evt);
             }
         });
 
@@ -117,9 +111,8 @@ public class VistaGestionProducto extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jTFPrecio, javax.swing.GroupLayout.DEFAULT_SIZE, 190, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jTFNombre)
-                        .addComponent(jCBCategoria, 0, 190, Short.MAX_VALUE)))
+                    .addComponent(jTFNombre)
+                    .addComponent(jCBCategoria, 0, 190, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(jBTNAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(71, 71, 71))
@@ -215,19 +208,25 @@ public class VistaGestionProducto extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTFPrecioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTFPrecioKeyTyped
+    private void jTFPrecioKeyTyped(java.awt.event.KeyEvent evt) {                                   
         // TODO add your handling code here:
         controlador.ControladorVistaGestionProducto.soloNumerosGetJTFPrecio(evt);
-    }//GEN-LAST:event_jTFPrecioKeyTyped
+    }                                  
 
     private void jBTNAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBTNAgregarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jBTNAgregarActionPerformed
-
-    private void jTFPrecioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTFPrecioKeyTyped
+                               
+    private void jTFNombreKeyTyped(java.awt.event.KeyEvent evt) {                                   
+        
+    }
+     private void jTFPrecioActionPerformed(java.awt.event.ActionEvent evt) {                                   
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTFPrecioKeyTyped
-
+    }
+     
+      private void jTFNombreActionPerformed(java.awt.event.ActionEvent evt) {                                   
+        // TODO add your handling code here:
+    }
     /**
      * @param args the command line arguments
      */
