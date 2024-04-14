@@ -38,7 +38,6 @@ public class ControladorVistaGestionProducto {
         vincularEventos();
     }
     
-    //envento vinculado directamente desde el cod.
     private static void vincularEventos() {
         vgp.getJBTNAgregar().addActionListener(new ActionListener() {
             @Override
@@ -46,7 +45,16 @@ public class ControladorVistaGestionProducto {
                 agregarProducto();
             }
         });
+
+        
+        vgp.getjBTNeliminar().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                eliminarProducto();
+        }
+    });
     }
+    
     
     private static void agregarProducto() {
         String nombre = vgp.getJTFNombre().getText();
@@ -88,6 +96,19 @@ public class ControladorVistaGestionProducto {
         vgp.getJTFPrecio().setText("");
         vgp.getJCBCategoria().setSelectedIndex(0);
     }
+    
+    private static void eliminarProducto() {
+    int filaSeleccionada = vgp.getJTable1().getSelectedRow();
+    if (filaSeleccionada == -1) {
+        viewDialogo("Debe eleccionar un producto para eliminar", 1);
+        return;
+    }
+    
+    listaProducto.remove(filaSeleccionada);
+    modeloTable.removeRow(filaSeleccionada);
+}
+    
+    
     
     
     private static void armarComboBx(){
